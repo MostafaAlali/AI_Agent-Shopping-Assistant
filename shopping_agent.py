@@ -9,7 +9,7 @@ import sqlite3
 import json
 import base64
 
-from review_api import get_product_rating
+from reviews_api import get_product_rating
 
 load_dotenv()
 
