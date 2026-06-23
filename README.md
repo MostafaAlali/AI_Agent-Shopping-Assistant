@@ -39,7 +39,8 @@ The system can:
 * Place orders only after explicit user confirmation
 
 ---
-Tey the agent by you self for here:[Vue]([https://github.com/vuejs/vue](https://aiagent-shopping-assistant-1.streamlit.app/))
+Tey the agent by you self for here:[View Demo]([https://your-demo-link.com](https://aiagent-shopping-assistant-1.streamlit.app/))
+
 ---
 ## 🎯 Benefits
 
