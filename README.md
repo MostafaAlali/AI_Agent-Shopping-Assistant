@@ -39,6 +39,23 @@ The system can:
 * Place orders only after explicit user confirmation
 
 ---
+## 🎯 Benefits
+
+### For Customers
+
+* Faster product discovery
+* Better search accuracy
+* Visual product search
+* Conversational shopping experience
+
+### For Businesses
+
+* Higher conversion rates
+* Better customer engagement
+* Reduced search abandonment
+* Scalable AI-powered product discovery
+
+---
 
 ## 🏗️ Architecture
 
@@ -63,7 +80,7 @@ Vision   Search   Ratings
        │        │
        ▼        ▼
      SQLite Inventory
-     Reviews API
+     Reviews
        │
        ▼
   Agent Response
@@ -112,15 +129,7 @@ Uses a Groq-hosted vision model to:
 3. Generate structured JSON
 4. Convert attributes into a searchable query
 
-Example extracted attributes:
 
-```json
-{
-  "category": "coffee",
-  "type": "espresso beans",
-  "organic": true
-}
-```
 
 ---
 
@@ -185,14 +194,6 @@ Example:
 ```text
 User: Order number 2
 
-Agent:
-Confirm purchase of product ID:25?
-```
-
-Only after confirmation:
-
-```text
-User: Yes
 
 Agent:
 Order placed successfully.
@@ -321,18 +322,6 @@ order number 2
 Agent:
 
 ```text
-Confirm purchase of product ID:8 ?
-```
-
-User:
-
-```text
-yes
-```
-
-Agent:
-
-```text
 Order placed successfully.
 ```
 
@@ -358,35 +347,11 @@ ai-shopping-agent/
 ├── store.db
 ├── requirements.txt
 ├── .env.example
-│
-├── tools/
-│   ├── search_products.py
-│   ├── checkout.py
-│   ├── image_search.py
-│   └── ratings.py
-│
 └── README.md
 ```
 
 ---
 
-## 🎯 Benefits
-
-### For Customers
-
-* Faster product discovery
-* Better search accuracy
-* Visual product search
-* Conversational shopping experience
-
-### For Businesses
-
-* Higher conversion rates
-* Better customer engagement
-* Reduced search abandonment
-* Scalable AI-powered product discovery
-
----
 
 ## 🔮 Future Improvements
 
@@ -404,15 +369,6 @@ ai-shopping-agent/
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Push changes
-5. Open a Pull Request
-
----
 
 ## 📜 License
 
