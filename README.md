@@ -1,61 +1,50 @@
-# 🏥 Medical Blood Report Analyzer
+# 🛒 AI Shopping Agent
 
-A Streamlit-based AI system that analyzes medical blood reports using Google Gemini 2.5 Flash to extract values, classify results, and generate health insights and diet recommendations.
+An agentic AI-powered shopping assistant that understands both **text queries and images**, and intelligently retrieves relevant products using LLM-based reasoning and tool orchestration.
 
 ---
 
 ## 🚀 Problem
 
-Reading and interpreting blood test reports requires medical knowledge and time. Patients often struggle to understand medical terminology and reference ranges.
+Modern e-commerce platforms fail to understand real customer intent.
+
+- Users struggle to describe products precisely in text
+- Keyword search misses context and intent
+- Visual search tools are fragmented and unreliable
+- Product discovery becomes slow and frustrating
+
+This leads to:
+- Abandoned searches
+- Lower conversion rates
+- Poor user experience
 
 ---
 
 ## 💡 Solution
 
-This application uses LLM-powered analysis to:
+**AI Shopping Agent** is an intelligent multi-modal AI system that bridges the gap between user intent and product discovery.
 
-- Extract medical values from raw reports
-- Compare against reference ranges
-- Classify results (HIGH / LOW / NORMAL)
-- Generate health summaries
-- Provide diet recommendations
-- Produce full clinical-style reports
+It can:
+- Understand natural language shopping requests
+- Analyze product images
+- Identify similar products
+- Retrieve relevant items from inventory
+- Maintain conversational context across sessions
 
----
-
-## 🧠 Tech Stack
-
-| Component | Technology | Purpose |
-|----------|------------|---------|
-| LLM | Google Gemini 2.5 Flash | Medical data extraction and reasoning |
-| Framework | Streamlit | Interactive web UI |
-| Language | Python 3.8+ | Core runtime |
-| LLM Integration | LangChain + Google GenAI | API orchestration |
-| Data Processing | Pandas | Structured data handling |
-| Styling | HTML / CSS | Clinical UI formatting |
-| File Handling | Python Native | Upload / export reports |
+All powered by an **LLM-driven agentic architecture** using LangChain.
 
 ---
 
-## ⚙️ Installation
+## ✨ Features
 
-### Prerequisites
-- Python 3.8+
-- Google API Key (from Google AI Studio)
+- 🧠 **Multi-Modal Understanding** — text + image input
+- 🖼️ **Visual Product Recognition** — find products from images
+- 🔄 **Agentic Tool Routing** — LLM decides which tools to use
+- 💬 **Conversational Memory** — remembers previous interactions
+- ⚡ **Real-Time Chat UI** — built with Streamlit
+- 🧩 **Modular Tool System** — easy to extend and scale
+- 🛡️ **Robust Error Handling** — stable production behavior
 
 ---
 
-### Setup
-
-```bash
-git clone https://github.com/yourusername/medical-blood-report-analyzer.git
-cd medical-blood-report-analyzer
-
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-
-echo "GOOGLE_API_KEY=your_api_key_here" > .env
-
-streamlit run app.py
+## 🏗️ Architecture
