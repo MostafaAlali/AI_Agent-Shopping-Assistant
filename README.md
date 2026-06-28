@@ -245,7 +245,7 @@ Order placed successfully.
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ai-shopping-agent.git
+git clone https://github.com/MostafaAlali/AI_Agent-Shopping-Assistant.git
 
 cd ai-shopping-agent
 ```
